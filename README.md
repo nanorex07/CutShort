@@ -11,5 +11,5 @@ Simple URL shortner made using
 ## How to run ?
 
 	- Clone the repo 
-	- install requirements with `pip install -r requirements.txt
+	- install requirements with `pip install -r requirements.txt`
 	- run `python main.py`
