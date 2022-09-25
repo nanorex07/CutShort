@@ -1,3 +1,15 @@
-# cutshort
-cust short is a simple url shortner made using bootstrap and flask in python.
-run main.py file
+# Cut Short
+
+
+Simple URL shortner made using 
+
+	- flask 
+	- bootstrap
+	- sqlite
+
+
+## How to run ?
+
+	- Clone the repo 
+	- install requirements with `pip install -r requirements.txt
+	- run `python main.py`
