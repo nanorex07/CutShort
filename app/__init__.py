@@ -2,9 +2,13 @@ from flask import Flask, redirect, url_for, session
 from .dbm import DBManager
 from functools import wraps
 import string, random
+import os
 
 db = DBManager()
-BASE_URL = "http://0.0.0.0:5000/url/"
+
+BASE_URL = os.getenv('BASE_URL')
+if not BASE_URL:
+    BASE_URL = 'http://0.0.0.0:8080/url/'
 
 def login_required(f):
     @wraps(f)
