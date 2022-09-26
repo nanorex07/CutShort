@@ -33,7 +33,7 @@ def dashboard():
                 db.add_url(url, code, session.get("user_id"))
 
     u = db.get_user_byid(session.get("user_id"))
-    print(db.get_urls(u[0]))
+    # print(db.get_urls(u[0]))
     return render_template("dashboard.html", user=u, all_urls=db.get_urls(u[0]), base_url = BASE_URL, curr_code=code)
     
 @views.route('/url/<string:code>')
